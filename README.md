@@ -11,7 +11,7 @@ A comprehensive Data Engineering and Machine Learning system that automates stoc
 - [Setup Instructions](#-setup-instructions)
 - [How to Run the Pipeline](#-how-to-run-the-pipeline)
 - [Model Performance Metrics](#-model-performance-metrics)
-- [Power BI Dashboard](#-dashboard-preview)
+- [Power BI Dashboard](#-power-bi-dashboard) 
 - [Project Structure](#-project-structure)
 
 ---
