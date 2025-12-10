@@ -119,7 +119,7 @@ The project includes a comprehensive 3-page Power BI dashboard that visualizes t
     * **OHLC Data Table:** Detailed breakdown of Open, High, Low, and Close prices with Volume data.
     * **Ticker Selection:** Sidebar slicer to switch between AAPL, AMZN, GOOGL, MSFT, and TSLA.
 
-![Historical Analysis](dasboard/Screenshot 2025-12-10 130357.png)
+![image alt](https://github.com/harshumak/AI-Powered-Financial-Analysis-Platform/blob/1f20b5fd28685a448b7d03c445557015a7ffdbb3/dashboard/Screenshot%202025-12-10%20130357.png)
 
 ---
 
