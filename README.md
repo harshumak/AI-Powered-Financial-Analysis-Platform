@@ -10,8 +10,8 @@ A comprehensive Data Engineering and Machine Learning system that automates stoc
 - [Tech Stack](#-tech-stack)
 - [Setup Instructions](#-setup-instructions)
 - [How to Run the Pipeline](#-how-to-run-the-pipeline)
-- [Model Performance](#-model-performance-metrics)
-- [Dashboard Preview](#-dashboard-preview)
+- [Model Performance Metrics](#-model-performance-metrics)
+- [Interactive Dashboard (Power BI)](#-dashboard-preview)
 - [Project Structure](#-project-structure)
 
 ---
@@ -96,7 +96,7 @@ python main.py
 
 ---
 
-##📊 Model Performance Metrics
+## 📊 Model Performance Metrics
 1. Time Series Forecasting (GBT Regressor)
    We use a Gradient Boosted Tree model with 150 lagged features to predict the Close Price 7 days into the future.
 
