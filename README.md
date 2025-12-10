@@ -63,10 +63,14 @@ pip install -r requirements.txt
 
 ### 3. Setup LLM (Ollama)
 To enable the AI Chatbot features, run a local LLM using Docker:
-# Pull and run Ollama container
+Pull and run Ollama container
+```bash
 docker run -d --name ollama -p 11434:11434 ollama/ollama
-# Download the Llama 3.2 model
+```
+Download the Llama 3.2 model
+```bash
 docker exec -it ollama ollama pull llama3.2
+```
 
 ### 🚀 How to Run the Pipeline
 The project is orchestrated by a central main.py script.
@@ -77,40 +81,40 @@ python main.py
 ```
 2. Navigate the Menu: You will see the following options:
 
- 1. 📥 Data Collection: Downloads fresh data from Yahoo Finance.
+  1. 📥 Data Collection: Downloads fresh data from Yahoo Finance.
 
- 2. 🧹 Data Preprocessing: Runs PySpark to calculate indicators (RSI, MA7/30/90).
+  2. 🧹 Data Preprocessing: Runs PySpark to calculate indicators (RSI, MA7/30/90).
 
- 3. 🗄️ Database Setup: Loads processed data into SQLite.
+  3. 🗄️ Database Setup: Loads processed data into SQLite.
 
- 4. 🤖 Train ML Models: Trains the GBT Forecaster and Investment Classifier.
+  4. 🤖 Train ML Models: Trains the GBT Forecaster and Investment Classifier.
 
- 5. 💬 Run Chatbot: Launches the CLI-based AI assistant.
+  5. 💬 Run Chatbot: Launches the CLI-based AI assistant.
 
- 6. ⚡ Run COMPLETE PIPELINE: Executes steps 1-4 sequentially.
+  6. ⚡ Run COMPLETE PIPELINE: Executes steps 1-4 sequentially.
 
-### 📊 Model Performance Metrics
+##📊 Model Performance Metrics
 1. Time Series Forecasting (GBT Regressor)
-We use a Gradient Boosted Tree model with 150 lagged features to predict the Close Price 7 days into the future.
+   We use a Gradient Boosted Tree model with 150 lagged features to predict the Close Price 7 days into the future.
 
-Target: 7-Day Future Close Price
+       Target: 7-Day Future Close Price
 
-Test RMSE: ~$25 - $40 (depending on volatility)
+       Test RMSE: ~$25 - $40 (depending on volatility)
 
-Test R² Score: > 0.90 (High correlation between predicted and actual)
+       Test R² Score: > 0.90 (High correlation between predicted and actual)
 
-Mean Absolute Error (MAE): Low error margin relative to stock price.
+       Mean Absolute Error (MAE): Low error margin relative to stock price.
 
 2. Investment Classification (Random Forest)
-Classifies stocks based on a composite score of Returns, RSI, and Volatility.
+   Classifies stocks based on a composite score of Returns, RSI, and Volatility.
 
-Classes: High (Buy), Medium (Hold), Low (Sell)
+       Classes: High (Buy), Medium (Hold), Low (Sell)
 
-Composite Score Formula: Score = (Returns * 0.3) + (Trend * 0.2) + (RSI * 0.15) + (Vol * 0.15) + (Sharpe * 0.2)
+       Composite Score Formula: Score = (Returns * 0.3) + (Trend * 0.2) + (RSI * 0.15) + (Vol * 0.15) + (Sharpe * 0.2)
 
-Accuracy: ~85%+ on test data.
+       Accuracy: ~85%+ on test data.
 
-### 📊 Interactive Dashboard (Power BI)
+## 📊 Interactive Dashboard (Power BI)
 
 The project includes a comprehensive 3-page Power BI dashboard that visualizes the pipeline's output, allowing users to analyze historical trends, technical indicators, and AI-driven forecasts.
 
