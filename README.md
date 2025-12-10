@@ -59,6 +59,7 @@ Clone the repository and install the required Python packages:
 
 ```bash
 pip install -r requirements.txt
+```
 
 ### 3. Setup LLM (Ollama)
 To enable the AI Chatbot features, run a local LLM using Docker:
@@ -71,8 +72,9 @@ docker exec -it ollama ollama pull llama3.2
 The project is orchestrated by a central main.py script.
 
 1. Start the Application:
+```bash
 python main.py
-
+```
 2. Navigate the Menu: You will see the following options:
 
  1. 📥 Data Collection: Downloads fresh data from Yahoo Finance.
@@ -87,7 +89,7 @@ python main.py
 
  6. ⚡ Run COMPLETE PIPELINE: Executes steps 1-4 sequentially.
 
-📊 Model Performance Metrics
+### 📊 Model Performance Metrics
 1. Time Series Forecasting (GBT Regressor)
 We use a Gradient Boosted Tree model with 150 lagged features to predict the Close Price 7 days into the future.
 
@@ -108,7 +110,7 @@ Composite Score Formula: Score = (Returns * 0.3) + (Trend * 0.2) + (RSI * 0.15) 
 
 Accuracy: ~85%+ on test data.
 
-## 📊 Interactive Dashboard (Power BI)
+### 📊 Interactive Dashboard (Power BI)
 
 The project includes a comprehensive 3-page Power BI dashboard that visualizes the pipeline's output, allowing users to analyze historical trends, technical indicators, and AI-driven forecasts.
 
@@ -130,7 +132,7 @@ The project includes a comprehensive 3-page Power BI dashboard that visualizes t
     * **RSI Trend:** Tracks the Relative Strength Index with clear overbought (>70) and oversold (<30) zones.
     * **Volatility:** Visualizes market risk and stability over time.
 
-![Technical Indicators](dasbhoard/Screenshot 2025-12-10 130409.png)
+![image alt](https://github.com/harshumak/AI-Powered-Financial-Analysis-Platform/blob/1f20b5fd28685a448b7d03c445557015a7ffdbb3/dashboard/Screenshot%202025-12-10%20130357.png)
 
 ---
 
@@ -141,4 +143,4 @@ The project includes a comprehensive 3-page Power BI dashboard that visualizes t
     * **Investment Grading:** Classifies stocks as **High, Medium, or Low** potential based on the Random Forest model.
     * **Actionable Recommendations:** Generates "Buy", "Hold", or "Sell" signals with specific reasons (e.g., "Strong MA Crossover", "High RSI Momentum").
 
-![AI Forecast](dashboard/Screenshot 2025-12-10 130421.png)
+![image alt](https://github.com/harshumak/AI-Powered-Financial-Analysis-Platform/blob/1f20b5fd28685a448b7d03c445557015a7ffdbb3/dashboard/Screenshot%202025-12-10%20130357.png)
