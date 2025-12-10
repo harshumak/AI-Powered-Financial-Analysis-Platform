@@ -1,0 +1,21 @@
+# Ignore Python Cache
+__pycache__/
+*.py[cod]
+
+# Ignore Data & Database (Too large for GitHub)
+data/stock_data/
+data/processed_stocks.parquet/
+data/financial_data.db
+data/models/
+
+# Ignore Environment
+venv/
+env/
+.env
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore Mac/Windows system files
+.DS_Store
+Thumbs.db
