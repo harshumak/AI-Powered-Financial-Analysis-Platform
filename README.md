@@ -11,7 +11,7 @@ A comprehensive Data Engineering and Machine Learning system that automates stoc
 - [Setup Instructions](#-setup-instructions)
 - [How to Run the Pipeline](#-how-to-run-the-pipeline)
 - [Model Performance Metrics](#-model-performance-metrics)
-- [Interactive Dashboard (Power BI)](#-dashboard-preview)
+- [Power BI Dashboard](#-dashboard-preview)
 - [Project Structure](#-project-structure)
 
 ---
@@ -118,7 +118,7 @@ python main.py
        Accuracy: ~85%+ on test data.
 ---
 
-## 📊 Interactive Dashboard (Power BI)
+## 📊 Power BI Dashboard
 
 The project includes a comprehensive 3-page Power BI dashboard that visualizes the pipeline's output, allowing users to analyze historical trends, technical indicators, and AI-driven forecasts.
 
