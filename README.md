@@ -81,17 +81,17 @@ python main.py
 ```
 2. Navigate the Menu: You will see the following options:
 
-  1. 📥 Data Collection: Downloads fresh data from Yahoo Finance.
+        1. 📥 Data Collection: Downloads fresh data from Yahoo Finance.
 
-  2. 🧹 Data Preprocessing: Runs PySpark to calculate indicators (RSI, MA7/30/90).
+        2. 🧹 Data Preprocessing: Runs PySpark to calculate indicators (RSI, MA7/30/90).
 
-  3. 🗄️ Database Setup: Loads processed data into SQLite.
+        3. 🗄️ Database Setup: Loads processed data into SQLite.
 
-  4. 🤖 Train ML Models: Trains the GBT Forecaster and Investment Classifier.
+        4. 🤖 Train ML Models: Trains the GBT Forecaster and Investment Classifier.
 
-  5. 💬 Run Chatbot: Launches the CLI-based AI assistant.
+        5. 💬 Run Chatbot: Launches the CLI-based AI assistant.
 
-  6. ⚡ Run COMPLETE PIPELINE: Executes steps 1-4 sequentially.
+        6. ⚡ Run COMPLETE PIPELINE: Executes steps 1-4 sequentially.
 
 ##📊 Model Performance Metrics
 1. Time Series Forecasting (GBT Regressor)
