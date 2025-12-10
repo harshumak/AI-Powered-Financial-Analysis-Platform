@@ -136,7 +136,7 @@ The project includes a comprehensive 3-page Power BI dashboard that visualizes t
     * **RSI Trend:** Tracks the Relative Strength Index with clear overbought (>70) and oversold (<30) zones.
     * **Volatility:** Visualizes market risk and stability over time.
 
-![image alt](https://github.com/harshumak/AI-Powered-Financial-Analysis-Platform/blob/1f20b5fd28685a448b7d03c445557015a7ffdbb3/dashboard/Screenshot%202025-12-10%20130357.png)
+![image alt](https://github.com/harshumak/AI-Powered-Financial-Analysis-Platform/blob/1d987b539e3437710f5359f777899b352bf34bc1/dashboard/Screenshot%202025-12-10%20130409.png)
 
 ---
 
@@ -147,4 +147,4 @@ The project includes a comprehensive 3-page Power BI dashboard that visualizes t
     * **Investment Grading:** Classifies stocks as **High, Medium, or Low** potential based on the Random Forest model.
     * **Actionable Recommendations:** Generates "Buy", "Hold", or "Sell" signals with specific reasons (e.g., "Strong MA Crossover", "High RSI Momentum").
 
-![image alt](https://github.com/harshumak/AI-Powered-Financial-Analysis-Platform/blob/1f20b5fd28685a448b7d03c445557015a7ffdbb3/dashboard/Screenshot%202025-12-10%20130357.png)
+![image alt](https://github.com/harshumak/AI-Powered-Financial-Analysis-Platform/blob/1d987b539e3437710f5359f777899b352bf34bc1/dashboard/Screenshot%202025-12-10%20130421.png)
